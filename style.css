@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrollbars caused by blur effect */
+    background-color: #ff8f00; /* Darker amber background color */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* ... existing styles ... */
+
+
+header {
+    background-color: #ffc107; /* Amber background color */
+    color: #212121; /* Dark text color */
+    text-align: center;
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-image {
+    margin-bottom: 20px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden; /* Ensure the image stays within the circular border */
+}
+
+.header-image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.header-content {
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+/* ... existing styles ... */
+
+
+nav {
+    background-color: #ff9800; /* Darker amber background color */
+    padding: 1em;
+    text-align: center;
+    width: 100%; /* Ensure full width */
+}
+
+.nav-button {
+    padding: 15px;
+    background-color: #ffc107; /* Amber background color */
+    color: #212121; /* Dark text color */
+    border: none;
+    cursor: pointer;
+}
+
+.content-section {
+    max-width: 800px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 4em;
+    background-color: #ffc107; /* Amber background color */
+    box-shadow: 0 0 20px #ff9800; /* Darker amber shadow */
+    border-radius: 16px;
+    border: 3px solid #212121; /* Dark border for contrast */
+    margin-top: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Initially hide the content */
+}
+
+.content-section.active {
+    opacity: 1;
+    display: block; /* Show the content when active */
+}
+
+footer {
+    background-color: #ffc107; /* Amber background color */
+    color: #212121; /* Dark text color */
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff9800; /* Darker amber background color */
+    color: #212121; /* Dark text color */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.5em;
+}
+
